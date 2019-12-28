@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html><head>
+    <title>My First Post</title>
+
+    <style>
+        html {
+            overflow-y: scroll;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
+</head><body><script>
+    $(document).ready(function() {
+        $('.nav-btn').click(function() {
+            $('#header-menu').toggleClass('active');
+            $('.nav-btn').toggleClass('active');
+        });
+    });
+</script>
+
+<style>
+    .header-nav {
+        overflow-y: hidden;
+    }
+</style>
+
+<div class="header header-fixed unselectable header-animated header-dark">
+    <div class="header-brand">
+        <div class="nav-item no-hover">
+            <a href="https://katliyang.com/">
+                <h6 class="title">Kat Li Yang</h6>
+            </a>
+        </div>
+        <div class="nav-item nav-btn" id="header-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="header-nav" id="header-menu">
+        <div class="nav-left">
+            <div class="nav-item text-center">
+                <a href=mailto:kat.liyang@darklyght.com target="_blank">
+                    <span class="icon">
+                        <i class="fas fa-wrapper fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-item text-center">
+                <a href="https://github.com/katliyang" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-item text-center">
+                <a href="https://www.linkedin.com/in/li-yang-kat/" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-wrapper fa-linkedin" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="nav-right">
+            
+            <div class="nav-item selected">
+                <a href=/>Home</a>
+            </div>
+            
+            <div class="nav-item selected">
+                <a href=/posts/>Blog</a>
+            </div>
+            
+        </div>
+
+        
+    </div>
+</div><div id="content">
+<space class="large"></space>
+<space class="large"></space>
+<space class="large"></space>
+
+<div class="row">
+    <div class="col-3 ignore-screen">
+    </div>
+    <div class="col-6 ignore-screen">
+        <div class="frame">
+            <div class="frame__header u-text-center">
+                <div>
+                    <div class="frame__title"><h1 id="title">My First Post</h1></div>
+                    <div class="frame__subtitle">27 December 2019</div>
+                    <div class="row row--no-wrap">
+                        <div class="col-12 level offset-center u-vertical-center">
+                            
+                            
+                            <a href="https://katliyang.com/tags/test"><span class="tag tag--dark text-light">test</span></a>
+                            
+                            <a href="https://katliyang.com/tags/hello"><span class="tag tag--dark text-light">hello</span></a>
+                            
+                            <a href="https://katliyang.com/tags/yo"><span class="tag tag--dark text-light">yo</span></a>
+                            
+                            <a href="https://katliyang.com/tags/testing"><span class="tag tag--dark text-light">testing</span></a>
+                            
+                            <a href="https://katliyang.com/tags/works"><span class="tag tag--dark text-light">works</span></a>
+                            
+                            <a href="https://katliyang.com/tags/ey"><span class="tag tag--dark text-light">ey</span></a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="col" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkatliyang.com%2fposts%2fmy-first-post%2f" target="_blank"><i class="fab fa-wrapper fa-facebook link-btn"></i></a>
+                    <a class="col" href="http://twitter.com/share?url=https%3a%2f%2fkatliyang.com%2fposts%2fmy-first-post%2f" target="_blank"><i class="fab fa-wrapper fa-twitter link-btn"></i></a>
+                    <a class="col" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fkatliyang.com%2fposts%2fmy-first-post%2f" target="_blank"><i class="fab fa-wrapper fa-linkedin link-btn"></i></a>
+                </div>
+            </div>
+            <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
+            <div class="frame__body">
+                <div class="content u-text-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Urna condimentum mattis pellentesque id nibh. Duis at tellus at urna condimentum mattis. Vulputate ut pharetra sit amet aliquam id diam. Pharetra convallis posuere morbi leo urna molestie at elementum. Ut tristique et egestas quis ipsum suspendisse ultrices. Nec ultrices dui sapien eget mi proin sed. Dui faucibus in ornare quam viverra orci. At lectus urna duis convallis convallis tellus. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Nisi est sit amet facilisis magna etiam tempor orci eu. Ornare aenean euismod elementum nisi quis eleifend. Lectus proin nibh nisl condimentum id venenatis a. Morbi non arcu risus quis varius.</p>
+<p>Sed blandit libero volutpat sed cras. Rutrum quisque non tellus orci ac auctor augue mauris. Urna duis convallis convallis tellus. Libero id faucibus nisl tincidunt. Integer quis auctor elit sed vulputate mi sit amet mauris. Sem integer vitae justo eget magna. Mattis pellentesque id nibh tortor id aliquet lectus proin. Morbi quis commodo odio aenean sed adipiscing diam. Nulla malesuada pellentesque elit eget. Quis varius quam quisque id diam vel.</p>
+    
+                </div>
+            </div>
+            <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
+            <div class="frame__footer">
+                <div class="frame__subtitle u-text-center"><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "katliyang" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 ignore-screen">
+    </div>
+</div>
+
+        </div><footer>
+    <div class="row level">
+        <div class="col-8">
+            <p class="white font-bold" style="letter-spacing: 0; font-size: 1.3rem;"><span class="faded">&copy; 2019</span> Kat Li Yang</p>
+        </div>
+        <div class="col-4">
+            <div class="row fluid-container center">
+                <div class="col-fluid">
+                    <a href=mailto:kat.liyang@darklyght.com target="_blank">
+                        <span class="icon">
+                            <i class="fas fa-wrapper fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-fluid">
+                    <a href="https://github.com/katliyang" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-fluid">
+                    <a href="https://www.linkedin.com/in/li-yang-kat/" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-wrapper fa-linkedin" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></body>
+</html>

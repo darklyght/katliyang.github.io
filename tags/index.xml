@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kat Li Yang</title>
+    <link>https://katliyang.com/tags/</link>
+    <description>Recent content in Tags on Kat Li Yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2019 19:01:02 -0800</lastBuildDate>
+    
+	<atom:link href="https://katliyang.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ey</title>
+      <link>https://katliyang.com/tags/ey/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/ey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hello</title>
+      <link>https://katliyang.com/tags/hello/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://katliyang.com/tags/test/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://katliyang.com/tags/testing/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>works</title>
+      <link>https://katliyang.com/tags/works/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/works/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yo</title>
+      <link>https://katliyang.com/tags/yo/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/tags/yo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

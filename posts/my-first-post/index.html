@@ -101,13 +101,14 @@
 <script>
     $(document).ready(function() {
         $('#comment-button').click(function() {
+            $('.textarea').removeClass('placeholder');
             $('.textarea').text($('#comment-text').val());
             $('[name="author"]').val($('#comment-name').val());
             $('[name="email"]').val($('#comment-email').val());
-            $('p.post-action > input').click();
+            $('p.post-action > :submit').click();
         });
 
-        $('p.post-action > input:submit').click(function() {
+        $('p.post-action > :submit').click(function() {
             console.log('test');
         });
     });

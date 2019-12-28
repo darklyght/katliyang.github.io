@@ -3,57 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/tags/ey/</loc>
+    <loc>https://katliyang.com/tags/ey/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/hello/</loc>
+    <loc>https://katliyang.com/tags/hello/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://katliyang.com/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>https://katliyang.com/posts/my-first-post/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://katliyang.com/posts/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://katliyang.com/tags/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/test/</loc>
+    <loc>https://katliyang.com/tags/test/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/testing/</loc>
+    <loc>https://katliyang.com/tags/testing/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/works/</loc>
+    <loc>https://katliyang.com/tags/works/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/yo/</loc>
+    <loc>https://katliyang.com/tags/yo/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://katliyang.com/categories/</loc>
   </url>
   
 </urlset>

@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kat Li Yang</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://katliyang.com/tags/</link>
     <description>Recent content in Tags on Kat Li Yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Dec 2019 19:01:02 -0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://katliyang.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ey</title>
-      <link>http://localhost:1313/tags/ey/</link>
+      <link>https://katliyang.com/tags/ey/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/ey/</guid>
+      <guid>https://katliyang.com/tags/ey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hello</title>
-      <link>http://localhost:1313/tags/hello/</link>
+      <link>https://katliyang.com/tags/hello/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/hello/</guid>
+      <guid>https://katliyang.com/tags/hello/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>http://localhost:1313/tags/test/</link>
+      <link>https://katliyang.com/tags/test/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/test/</guid>
+      <guid>https://katliyang.com/tags/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
+      <link>https://katliyang.com/tags/testing/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>https://katliyang.com/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>works</title>
-      <link>http://localhost:1313/tags/works/</link>
+      <link>https://katliyang.com/tags/works/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/works/</guid>
+      <guid>https://katliyang.com/tags/works/</guid>
       <description></description>
     </item>
     
     <item>
       <title>yo</title>
-      <link>http://localhost:1313/tags/yo/</link>
+      <link>https://katliyang.com/tags/yo/</link>
       <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
       
-      <guid>http://localhost:1313/tags/yo/</guid>
+      <guid>https://katliyang.com/tags/yo/</guid>
       <description></description>
     </item>
     

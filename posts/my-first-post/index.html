@@ -100,16 +100,17 @@
 
 <script>
     $(document).ready(function() {
+        $('.edit').remove();
+        $('.isso-comment-footer > a').addClass('u');
+        $('.isso-comment-footer > a').addClass('u-LR');
+        $('.isso-comment-footer > a').addClass('u-pull-right');
+
         $('#comment-button').click(function() {
             $('.textarea').removeClass('placeholder');
             $('.textarea').text($('#comment-text').val());
             $('[name="author"]').val($('#comment-name').val());
             $('[name="email"]').val($('#comment-email').val());
             $('p.post-action > :submit').click();
-        });
-
-        $('p.post-action > :submit').click(function() {
-            console.log('test');
         });
     });
 </script>
@@ -173,6 +174,7 @@
             <!-- begin comments //-->
             <section id="isso-thread">
             </section>
+            <div id="isso-root"><div id="isso-1" class="isso-comment"><div class="text-wrapper"><div role="meta" class="isso-comment-header"><span class="author">test</span><span class="spacer">•</span><a href="#isso-1" class="permalink"><time title="Sat Dec 28 2019 15:31:39 GMT-0800 (Pacific Standard Time)" datetime="2019-11-06T23:31:39Z">a minute ago</time></a><span class="note"></span></div><div class="text"><p>test</p></div><div class="isso-comment-footer"><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></div><div class="isso-follow-up"></div></div></div></div>
             <!-- end comments //-->
         </div>
     </div>

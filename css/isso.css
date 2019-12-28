@@ -124,10 +124,10 @@
 }
 .isso-comment > div.text-wrapper > .isso-comment-footer {
     font-size: 0.80em;
-    color: gray !important;
-    clear: left;
+    /* color: gray !important;
+    clear: left; */
 }
-.isso-feedlink,
+/* .isso-feedlink,
 .isso-comment > div.text-wrapper > .isso-comment-footer a {
     font-weight: bold;
     text-decoration: none;
@@ -151,7 +151,7 @@
 .isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg {
     position: relative;
     top: .2em;
-}
+} */
 .isso-comment .isso-postbox {
     margin-top: 0.8em;
 }

@@ -165,8 +165,8 @@
     clear: right;
 }
 .isso-postbox > .form-wrapper {
-    /* visibility: hidden;
-    display: none; */
+    visibility: hidden;
+    display: none;
     /* display: block; */
     padding: 0;
 }

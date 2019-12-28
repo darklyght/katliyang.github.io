@@ -12,8 +12,11 @@
     margin: 0;
 }
 #isso-thread > h4 {
-    color: #555;
-    font-weight: bold;
+    color: rgba(55,64,84,.6);
+    font-size: .85rem;
+    margin: .25rem auto .75rem;
+    /* color: #555;
+    font-weight: bold; */
 }
 #isso-thread > .isso-feedlink {
     float: right;
@@ -162,7 +165,9 @@
     clear: right;
 }
 .isso-postbox > .form-wrapper {
-    display: block;
+    visibility: hidden;
+    display: none;
+    /* display: block; */
     padding: 0;
 }
 .isso-postbox > .form-wrapper > .auth-section,

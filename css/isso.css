@@ -132,6 +132,10 @@
     font-weight: bold;
     text-decoration: none;
 }
+.isso-comment > div.text-wrapper > .isso-comment-footer a.edit {
+    visibility: hidden;
+    display: none;
+}
 .isso-feedlink:hover,
 .isso-comment > div.text-wrapper > .isso-comment-footer a:hover {
     color: #111111 !important;

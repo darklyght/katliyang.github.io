@@ -133,3 +133,8 @@
 .placeholder {
     color: var(--cirrus-dark-gray);
 }
+
+[name="website"] {
+    visibility: hidden;
+    display:none;
+}

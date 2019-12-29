@@ -130,6 +130,14 @@
     margin-left: 10px;
 }
 
+.isso-comment-header > span {
+    margin-left: 10px;
+}
+
+.isso-comment-footer > a {
+    margin-left: 10px;
+}
+
 .placeholder {
     color: var(--cirrus-dark-gray);
 }

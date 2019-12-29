@@ -101,8 +101,9 @@
 <script>
     $(document).ready(function() {
         setTimeout(function() {
+            $('#isso-thread > h4').remove();
             $('.post-action').addClass('u-pull-right');
-            $('[name="website"]').remove();
+            $('[name="website"]').hide();
             $('.input-wrapper').addClass('col-6');
         }, 1);
 
@@ -164,13 +165,11 @@
         <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
         <div class="frame__footer col-10">
             <h6>Comments</h6>
-            <div class="row">
-                <div class="col-12">
-                    <!-- begin comments //-->
-                    <section id="isso-thread">
-                    </section>
-                    <!-- end comments //-->
-                </div>
+            <div class="col-12">
+                <!-- begin comments //-->
+                <section id="isso-thread">
+                </section>
+                <!-- end comments //-->
             </div>
         </div>
     </div>

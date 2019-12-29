@@ -153,3 +153,11 @@
     visibility: hidden;
     display:none;
 }
+
+.isso-follow-up .isso-comment {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.isso-comment .isso-follow-up {
+    padding-left: calc(7% + 20px);
+}

@@ -12,8 +12,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
 
-    <link href="/css/isso.css" rel="stylesheet">
-
     <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
@@ -22,6 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
+
+    <link href="/css/isso.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
@@ -41,7 +41,7 @@
 </style>
 
 <!-- isso -->
-<script data-isso="https://299792.xyz/isso/" data-isso-css="false" data-isso-avatar="false" data-isso-gravatar="false" data-isso-vote="false" src="https://299792.xyz/isso/js/embed.min.js"></script>
+<script data-isso="https://299792.xyz/isso/" data-isso-require-author="true" data-isso-css="false" data-isso-avatar="false" data-isso-gravatar="false" data-isso-vote="false" src="https://299792.xyz/isso/js/embed.min.js"></script>
 <!-- end isso -->
 
 <div class="header header-fixed unselectable header-animated header-dark">
@@ -100,12 +100,18 @@
 
 <script>
     $(document).ready(function() {
-        $('#comment-button').click(function() {
-            $('.textarea').removeClass('placeholder');
-            $('.textarea').text($('#comment-text').val());
-            $('[name="author"]').val($('#comment-name').val());
-            $('[name="email"]').val($('#comment-email').val());
-            $('p.post-action > :submit').click();
+        setTimeout(function() {
+            $('.post-action').addClass('u-pull-right');
+            $('[name="website"]').remove();
+            $('.input-wrapper').addClass('col-6');
+        }, 1);
+
+        $(window).click(function () {
+            setTimeout(function() {
+                $('.post-action').addClass('u-pull-right');
+                $('[name="website"]').remove();
+                $('.input-wrapper').addClass('col-6');
+            }, 1);
         });
     });
 </script>
@@ -156,20 +162,16 @@
             </div>
         </div>
         <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
-        <div class="frame__footer">
-            <div class="row"><h6>Comments</h6></div>
+        <div class="frame__footer col-10">
+            <h6>Comments</h6>
             <div class="row">
-                <div class="col-12"><textarea id="comment-text" type="text" placeholder="Your Message"></textarea></div>
-                <div class="col-6"><div class="input-control"><input id="comment-name" class="input-contains-icon" type="name" placeholder="Your Name"><span class="icon"><i class="fas fa-wrapper fa-user"></i></span></div></div>
-                <div class="col-6"><div class="input-control"><input id="comment-email" class="input-contains-icon" type="email" placeholder="Your Email"><span class="icon"><i class="fas fa-wrapper fa-envelope"></i></span></div></div>
+                <div class="col-12">
+                    <!-- begin comments //-->
+                    <section id="isso-thread">
+                    </section>
+                    <!-- end comments //-->
+                </div>
             </div>
-            <div class="row">
-                <div class="col-12"><input id="comment-button" type="submit" class="btn-primary u-pull-right"></div>
-            </div>
-            <!-- begin comments //-->
-            <section id="isso-thread">
-            </section>
-            <!-- end comments //-->
         </div>
     </div>
 </div>

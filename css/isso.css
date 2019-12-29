@@ -131,11 +131,18 @@
 }
 
 .isso-comment-header > span {
-    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.isso-comment-header > a {
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .isso-comment-footer > a {
-    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .placeholder {

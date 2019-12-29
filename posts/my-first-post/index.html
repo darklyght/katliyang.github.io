@@ -102,6 +102,8 @@
     $(document).ready(function() {
         setTimeout(function() {
             $('#isso-thread > h4').remove();
+            $('.isso-postbox').addClass('row');
+            $('.isso-root').addClass('row');
             $('.post-action').addClass('u-pull-right');
             $('[name="website"]').hide();
             $('.input-wrapper').addClass('col-6');
@@ -109,6 +111,8 @@
 
         $(window).click(function () {
             setTimeout(function() {
+                $('.isso-postbox').addClass('row');
+                $('.isso-root').addClass('row');
                 $('.post-action').addClass('u-pull-right');
                 $('[name="website"]').hide();
                 $('.input-wrapper').addClass('col-6');

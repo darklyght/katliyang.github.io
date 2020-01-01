@@ -5,6 +5,7 @@
 
     <style>
         html {
+            background-color: var(--cirrus-light-gray);
             overflow-y: scroll;
         }
     </style>
@@ -40,10 +41,6 @@
         overflow-y: hidden;
     }
 </style>
-
-<!-- isso -->
-<script data-isso="https://299792.xyz/isso/" data-isso-require-author="true" data-isso-css="false" data-isso-avatar="false" data-isso-gravatar="false" data-isso-vote="false" src="https://299792.xyz/isso/js/embed.min.js"></script>
-<!-- end isso -->
 
 <div class="header header-fixed unselectable header-animated header-dark">
     <div class="header-brand">
@@ -99,6 +96,8 @@
     </div>
 </div><div id="content">
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <script>
     $(document).ready(function() {
         $('.nav-btn').click(function() {
@@ -132,6 +131,48 @@
                 }
             }
         });
+
+        $('#submit').click(function() {
+            var error = false;
+            var pattern = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i
+            if ($('#name').val() == "") {
+                $('#name').addClass('input-error');
+                $('#name-error').text('Please fill up a name.');
+                error = true;
+            } else {
+                $('#name').removeClass('input-error');
+                $('#name-error').text('');
+            }
+            if (!pattern.test($('#email').val())) {
+                $('#email').addClass('input-error');
+                $('#email-error').text('Please fill up a valid email address.');
+                error = true;
+            } else {
+                $('#email').removeClass('input-error');
+                $('#email-error').text('');
+            }
+            if ($('#message').val() == "") {
+                $('#message').addClass('input-error');
+                $('#message-error').text('Please enter a message. Don\'t worry, I\'m friendly!');
+                error = true;
+            } else {
+                $('#message').removeClass('input-error');
+                $('#message-error').text('');
+            }
+            if (!error) {
+                Email.send({
+                    SecureToken : "2d7b4b78-c195-48a7-a829-626f96ad14d0",
+                    To : "kat.liyang@gmail.com",
+                    From : "contact@katliyang.com",
+                    Subject : "Message from " + $('#name').val() + "<" + $('#email').val() + ">",
+                    Body : $('#message').val()
+                })
+                $('#submit').attr('disabled', 'true');
+                $('#submit').text('Sent!');
+                $('#submit').addClass('tooltip');
+                $('#submit').attr('data-tooltip', 'Refresh the page to send another message.');
+            }
+        });
     });
 </script>
 
@@ -142,8 +183,24 @@
         background-repeat: no-repeat;
     }
 
+    #about {
+        background: var(--cirrus-light-gray);
+    }
+
+    #projects {
+        background: white;
+    }
+
+    #connect {
+        background: var(--cirrus-light-gray);
+    }
+
     #splash-text {
         background:rgba(0,0,0,0.7);
+    }
+
+    #intro {
+        background:rgba(255,255,255,0.9);
     }
 
     .header {
@@ -154,24 +211,153 @@
         background: rgba(0,0,0,0.87);
     }
 </style>
-
-<div id="splash-img" class="hero fullscreen hero-img parallax-img">
-    <div class="hero-body">
-        <div id="splash-text" class="content u-text-center">
-            <h1 class="uppercase white title">Kat Li Yang</h1>
-            <h3 class="suppercase white sub-title faded">I am a work in progress</h3>
+<section>
+    <div id="splash-img" class="hero fullscreen hero-img parallax-img">
+        <div class="hero-body">
+            <div id="splash-text" class="content u-text-center">
+                <h1 class="uppercase white title">Kat Li Yang</h1>
+                <h3 class="suppercase white sub-title faded">I am a work in progress</h3>
+            </div>
         </div>
     </div>
+</section>
+<section>
+    <div id="about" class="row u-center">
+        <space class="large"></space>
+        <div class="col-6">
+            <div class="u-text-center">
+                <h3>About</h3>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div class="col-12 u-center">
+            <div id="intro" class="frame u-center">
+                <div class="frame__header u-text-center">
+                    <div>
+                        <figure class="avatar avatar--xlarge">
+                            <img src="avatar.svg">
+                        </figure>
+                        <div class="frame__title"><strong>Kat</strong> Li Yang</div>
+                        <div class="frame__subtitle">
+                            <div class="tag-container">
+                                <div class="tag tag--info">Digital Hardware Engineer</div>
+                                <div class="tag tag--info">Casual Gamer</div>
+                                <div class="tag tag--info">Occasional Artist</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="col tooltip" data-tooltip="kat.liyang@darklyght.com" href=mailto:kat.liyang@darklyght.com target="_blank"><i class="fas fa-wrapper fa-envelope link-btn" aria-hidden="true"></i></a>
+                        <a class="col tooltip" data-tooltip="katliyang" href="https://github.com/katliyang" target="_blank"><i class="fab fa-wrapper fa-github link-btn" aria-hidden="true"></i></a>
+                        <a class="col tooltip" data-tooltip="li-yang-kat" href="https://www.linkedin.com/in/li-yang-kat/" target="_blank"><i class="fab fa-wrapper fa-linkedin link-btn" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
+                <div class="frame__body">
+                    <div class="content u-text-center">
+                        <h5>Hi!</h5>
+                        <p>My name is Li Yang and I am currently a Masters student in Electrical Engineering and Computer Science at the University of California Berkeley. I enjoy working on digital hardware design, where FPGAs are my platform of choice due to their incredible flexibility across application domains.</p>
+                        <p>In my free time, I often play DOTA 2 and watch documentaries on YouTube. I enjoy the occasional art and craft as well, especially knitting and crocheting. Feel free to hit me up if you share my interests!</p>
+                    </div>
+                </div>
+                <div class="content-no-padding"><div class="divider u-no-margin"></div></div>
+                <div class="frame__footer">
+                    <div class="frame__subtitle u-text-center"><i>
+                        All that is gold does not glitter, <br />
+                        Not all those who wander are lost; <br />
+                        The old that is strong does not wither, <br />
+                        Deep roots are not reached by the frost.
+                    </i></div>
+                </div>
+            </div>
+        </div>
+        <space class="large"></space>
+    </div>
+</section>
+<section>
+    <div id="projects" class="row u-center">
+        <div class="col-6 u-text-center">
+            <space class="large"></space>
+            <h3>Portfolio</h3>
+            <div class="divider"></div>
+        </div>
+        <space class="large"></space>
+<div class="content">
+    
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-container">
+                    <div class="card-image" style="background-image: url(https://placeimg.com/640/480/nature)"></div>
+
+                    <div class="title-container">
+                        <p class="title">My First Project</p><span class="subtitle">27 December 2019</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>My first project!</p>
+                </div>
+                <div class="action-bar u-center">
+                    <a href="https://katliyang.com/projects/my-first-post/"><button class="btn">LEARN MORE</button></a>
+                </div>
+            </div>
+        </div>
+    
 </div>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <space class="large"></space>
+    </div>
+</section>
+<section id="connect">
+    <div class="row u-center">
+        <space class="large"></space>
+        <div class="col-6 u-text-center">
+            <h3>Connect</h3>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row u-center">
+        <div class="col-6 u-text-center">
+            <div class="form-section">
+                <label class="font-bold">Contact</label>
+                <div class="section-body row u-no-padding">
+                    <div class="col-6">
+                        <div class="input-control">
+                            <input id="name" class="input-contains-icon-left input-small" type="text" placeholder="Name" />
+                            <span class="icon icon-left"><i class="fa fa-wrapper fa-user"></i></span>
+                            <span id="name-error" class="info inline u-text-center"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-control">
+                            <input id="email" class="input-contains-icon-left input-small" type="text" placeholder="Email" />
+                            <span class="icon icon-left"><i class="fa fa-wrapper fa-envelope"></i></span>
+                            <span id="email-error" class="info inline u-text-center"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <label class="font-bold label-small">Message</label>
+                <div class="row">
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                    <span id="message-error" class="info inline u-text-center"></span>
+                </div>
+            </div>
+            <div class="form-section u-pull-right">
+                <button id="submit" class="btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+    <space class="large"></space>
+</section>
 
         </div><footer>
     <div class="row level">
-        <div class="col-8">
-            <p class="white font-bold" style="letter-spacing: 0; font-size: 1.3rem;"><span class="faded">&copy; 2019</span> Kat Li Yang</p>
+        <div class="col">
+            <p class="white font-bold u-center" style="letter-spacing: 0; font-size: 1.3rem;"><span class="faded">&copy; 2019</span>&nbsp;Kat Li Yang</p>
         </div>
-        <div class="col-4">
-            <div class="row fluid-container center">
+        <div class="col">
+            <div class="row fluid-container center u-center">
                 <div class="col-fluid">
                     <a href=mailto:kat.liyang@darklyght.com target="_blank">
                         <span class="icon">

@@ -69,7 +69,7 @@
 
 [type='button'] {
     width: max-content !important;
-    display: block !important;
+    display: block;
     line-height: 2rem !important;
     overflow: hidden !important;
     padding: .5rem 1.5rem !important;
@@ -152,6 +152,10 @@
 [name="website"] {
     visibility: hidden;
     display:none;
+}
+
+[name="edit"] {
+    visibility: hidden !important;
 }
 
 .isso-follow-up .isso-comment {

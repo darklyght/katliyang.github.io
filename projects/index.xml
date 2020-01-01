@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Kat Li Yang</title>
+    <link>https://katliyang.com/projects/</link>
+    <description>Recent content in Projects on Kat Li Yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2019 19:01:02 -0800</lastBuildDate>
+    
+	<atom:link href="https://katliyang.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Project</title>
+      <link>https://katliyang.com/projects/my-first-post/</link>
+      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      
+      <guid>https://katliyang.com/projects/my-first-post/</guid>
+      <description>My first project!</description>
+    </item>
+    
+  </channel>
+</rss>

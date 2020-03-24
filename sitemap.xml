@@ -3,6 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://katliyang.com/projects/risc-v/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/spin_wave/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/synthesizer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/neural_network/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/moduler/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/signal_generator/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/hornet/</loc>
+  </url>
+  
+  <url>
     <loc>https://katliyang.com/tags/ey/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
@@ -23,17 +51,7 @@
   </url>
   
   <url>
-    <loc>https://katliyang.com/projects/my-first-post/</loc>
-    <lastmod>2019-12-27T19:01:02-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://katliyang.com/posts/</loc>
-    <lastmod>2019-12-27T19:01:02-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katliyang.com/projects/</loc>
     <lastmod>2019-12-27T19:01:02-08:00</lastmod>
   </url>
   
@@ -64,6 +82,10 @@
   
   <url>
     <loc>https://katliyang.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://katliyang.com/projects/</loc>
   </url>
   
 </urlset>

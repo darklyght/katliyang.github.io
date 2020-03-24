@@ -6,18 +6,71 @@
     <description>Recent content in Projects on Kat Li Yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Dec 2019 19:01:02 -0800</lastBuildDate>
     
 	<atom:link href="https://katliyang.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Project</title>
-      <link>https://katliyang.com/projects/my-first-post/</link>
-      <pubDate>Fri, 27 Dec 2019 19:01:02 -0800</pubDate>
+      <title>FPGA RISC-V Processor</title>
+      <link>https://katliyang.com/projects/risc-v/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://katliyang.com/projects/my-first-post/</guid>
-      <description>My first project!</description>
+      <guid>https://katliyang.com/projects/risc-v/</guid>
+      <description>Implementation of RISC-V RV32I ISA processor on a Zynq-7000 FPGA</description>
+    </item>
+    
+    <item>
+      <title>Spin-wave Skyrmionics</title>
+      <link>https://katliyang.com/projects/spin_wave/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/spin_wave/</guid>
+      <description>Research project on novel spintronics device for algorithm acceleration</description>
+    </item>
+    
+    <item>
+      <title>Analog Audio Synthesizer</title>
+      <link>https://katliyang.com/projects/synthesizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/synthesizer/</guid>
+      <description>Audio synthesizer using operational amplifier oscillators and filters</description>
+    </item>
+    
+    <item>
+      <title>FPGA Neural Network</title>
+      <link>https://katliyang.com/projects/neural_network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/neural_network/</guid>
+      <description>Hardware-accelerated multi-layer perceptron neural network on a Zynq-7000 FPGA</description>
+    </item>
+    
+    <item>
+      <title>Course Management Portal</title>
+      <link>https://katliyang.com/projects/moduler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/moduler/</guid>
+      <description>Student module/course management application using VueJS and RethinkDB</description>
+    </item>
+    
+    <item>
+      <title>FPGA Signal Generator</title>
+      <link>https://katliyang.com/projects/signal_generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/signal_generator/</guid>
+      <description>2-channel Direct Digital Synthesis signal generator in Verilog on Basys3 FPGA</description>
+    </item>
+    
+    <item>
+      <title>AUV Hornet 2.0</title>
+      <link>https://katliyang.com/projects/hornet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://katliyang.com/projects/hornet/</guid>
+      <description>Algorithm and software system development for underwater localisation of acoustic signals</description>
     </item>
     
   </channel>

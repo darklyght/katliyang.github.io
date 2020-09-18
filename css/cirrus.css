@@ -2010,8 +2010,6 @@ a.tag:hover {
 button,
 .btn,
 [type="submit"] {
-    -moz-appearance: none;
-    -webkit-appearance: none;
     display: block;
     line-height: 2rem;
     overflow: hidden;

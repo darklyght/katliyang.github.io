@@ -67,6 +67,11 @@
     box-shadow: 0 0 0 0.2rem rgba(61, 171, 240, var(--focus-opacity)), inset 0px 1px 8px rgba(0, 0, 0, 0.07);
 }
 
+[type='submit'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 [type='button'] {
     -moz-appearance: none;
     -webkit-appearance: none;

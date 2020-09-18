@@ -43,8 +43,8 @@
 }
 
 #isso-thread .textarea {
-    -moz-appearance: textfield-multiline;
-    -webkit-appearance: textarea;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 100%;
     border: 1px solid #ddd;
     padding: .8rem;
@@ -68,6 +68,8 @@
 }
 
 [type='button'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: max-content !important;
     display: block;
     line-height: 2rem !important;
